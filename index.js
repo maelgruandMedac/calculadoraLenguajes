@@ -21,7 +21,7 @@ function appendParenthesis(paranthesis) {
             currentInput += "(";
         }
     } else if (paranthesis === ")") {
-        if (currentInput === "" || currentInput.slice(-1).match(/[+\-*/(]/)) {
+        if (currentInput === "" || currentInput.slice(-1).match(/[+\-*/(]/)){
             return; // Empêche la fermeture de parenthèse si ce n'est pas valide
         }
         currentInput += ")";
@@ -83,3 +83,8 @@ document.addEventListener("keydown", function(event) {
         clearResult();
     }
 });
+// Ajout de la fonction clearParse
+function clearParse() {
+    currentInput = currentInput.slice(0, -1); // Supprime le dernier caractère
+    updateDisplay(); // Mise à jour de l'affichage
+}

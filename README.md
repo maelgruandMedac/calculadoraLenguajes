@@ -13,7 +13,9 @@ Bienvenue dans le projet **iPhone Style Calculator** ! Cette application web ré
 ## Aperçu
 L'**iPhone Style Calculator** est conçue pour offrir une interface utilisateur qui imite fidèlement celle de la calculatrice d'un iPhone, avec des boutons arrondis, des animations douces et un fond sombre élégant. 
 
-![Aperçu de la calculatrice](screenshot.png)
+![Aperçu de la calculatrice]
+![image](https://github.com/user-attachments/assets/3f17fa62-aadf-49e9-8265-0d3ac5ccd0c8)
+
 
 ## Fonctionnalités
 - Interface utilisateur inspirée de l'iPhone

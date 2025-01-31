@@ -34,6 +34,13 @@ function clearResult() {
     updateDisplay();
 }
 
+// Ajout de la fonction clearParse
+function clearParse() {
+    currentInput = currentInput.slice(0, -1); // Supprime le dernier caractère
+    updateDisplay(); // Mise à jour de l'affichage
+}
+
+
 function calculate() {
     try {
         // Remplace les fonctions spécifiques par leur équivalent JavaScript
@@ -57,7 +64,9 @@ function updateDisplay() {
 }
 
 function useLastAnswer() {
-    currentInput += lastAnswer;
+    if (currentInput !== lastAnswer) {  // Vérifie que le dernier résultat n'est pas déjà affiché
+        currentInput = lastAnswer; // Remplace le résultat actuel par le dernier résultat
+    }
     updateDisplay();
 }
 
@@ -83,8 +92,3 @@ document.addEventListener("keydown", function(event) {
         clearResult();
     }
 });
-// Ajout de la fonction clearParse
-function clearParse() {
-    currentInput = currentInput.slice(0, -1); // Supprime le dernier caractère
-    updateDisplay(); // Mise à jour de l'affichage
-}
